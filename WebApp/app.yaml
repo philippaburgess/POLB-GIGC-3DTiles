@@ -1,0 +1,25 @@
+runtime: nodejs18
+
+handlers:
+- url: index.html
+  static_files: index.html
+  upload: index.html
+
+- url: styles.css
+  static_files: styles.css
+  upload: styles.css
+
+- url: app.js
+  static_files: app.js
+  upload: app.js
+
+- url: /Cesium/Cesium.js
+  static_files: Cesium/Cesium.js
+  upload: Cesium/Cesium.js
+
+- url: /Cesium/widgets.css
+  static_files: Cesium/Widgets/widgets.css
+  upload: Cesium/Widgets/widgets.css
+
+- url: /.*
+  script: auto
